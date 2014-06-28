@@ -20,19 +20,19 @@
   @media only screen and (max-width: 632px), only screen and (min-width: 768px) and (max-width: 843px) {
     #if-basicGrid {height: 225px;}
     #if-evenColumns {height: 570px;}
-    #if-centerClass {height: 270px;}   
-    #if-offsetColumns {height: 165px;}   
-    #if-textPad {height: 480px;}   
-    #if-fullWidth {height: 320px;}   
+    #if-centerClass {height: 270px;}
+    #if-offsetColumns {height: 165px;}
+    #if-textPad {height: 480px;}
+    #if-fullWidth {height: 320px;}
     #if-subGrid {height: 210px;}
     #if-blockGrid {height: 1000px;}
-    #if-visibilityClasses {height: 110px;}   
-    #if-panels {height: 110px;}   
-    #if-panelSubGrid {height: 110px;}   
-    #if-panelSidebar {height: 400px;}   
+    #if-visibilityClasses {height: 110px;}
+    #if-panels {height: 110px;}
+    #if-panelSubGrid {height: 110px;}
+    #if-panelSidebar {height: 400px;}
     #if-buttons{height: 650px;}
     #if-images{height: 800px;}
-  } 
+  }
 
 </style>
 <div class="row docs">
@@ -55,45 +55,45 @@
     </div>
   </div>
   <div class="large-9 columns">
-    
-    <?php require 'components/getting-started.php' ?>
-    
-    <hr class="section">
 
-    <?php require 'components/grid.php' ?>
-    
-    <hr class="section">
-
-    <?php require 'components/sub-grid.php' ?>
+    <%- partial("components/getting-started") %>
 
     <hr class="section">
 
-    <?php require 'components/block-grid.php' ?>
-    
-    <hr class="section">
-
-    <?php require 'components/visibility-classes.php' ?>
-    
-    <hr class="section">
-
-    <?php require 'components/panels.php' ?>
-    
-    <hr class="section">
-
-    <?php require 'components/buttons.php' ?>
+    <%- partial("components/grid") %>
 
     <hr class="section">
 
-    <?php require 'components/images.php' ?>
+    <%- partial("components/sub-grid") %>
 
     <hr class="section">
 
-    <?php require 'components/compatibility.php' ?>
+    <%- partial("components/block-grid") %>
 
     <hr class="section">
 
-    <?php require 'components/changelog.php' ?>
-    
+    <%- partial("components/visibility-classes") %>
+
+    <hr class="section">
+
+    <%- partial("components/panels") %>
+
+    <hr class="section">
+
+    <%- partial("components/buttons") %>
+
+    <hr class="section">
+
+    <%- partial("components/images") %>
+
+    <hr class="section">
+
+    <%- partial("components/compatibility") %>
+
+    <hr class="section">
+
+    <%- partial("components/changelog") %>
+
     <br>
     <br>
   </div>

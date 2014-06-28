@@ -1,12 +1,18 @@
-<h1 id="visibility-classes" data-magellan-destination="visibility-classes" class="light">Visibility Classes</h1>
-<p class="lead">Selectively show content for different screen sizes.</p>
-<hr />
+# Visibility Classes
+<div id="visibility-classes" data-magellan-destination="visibility-classes"></div>
 
-<p>By adding a visibility class to an element, you can show or hide it based on screen size. Visibility classes can be used on any element. Due to Outlook's lack of support for certain CSS properties, the Ink visibiility classes should be used in conjunction with conditional comments to ensure that the content is properly hidden (or shown) in Outlook 2007/2010/2013.</p>
-<p>Note: If you're using a visibility class on an image, be sure to apply it to the parent element, not to the image itself.</p>
-<h6>Using Visibility Classes</h6>
-<?php code_example(
-'<table class="row">
+Selectively show content for different screen sizes.
+
+***
+
+By adding a visibility class to an element, you can show or hide it based on screen size. Visibility classes can be used on any element. Due to Outlook's lack of support for certain CSS properties, the Ink visibiility classes should be used in conjunction with conditional comments to ensure that the content is properly hidden (or shown) in Outlook 2007/2010/2013.
+
+Note: If you're using a visibility class on an image, be sure to apply it to the parent element, not to the image itself.
+
+###### Using Visibility Classes
+
+```html
+<table class="row">
   <tr>
     <td class="wrapper last">
 
@@ -16,7 +22,7 @@
             <td class="panel">
 
               .show-for-small
-              
+
             </td>
             <td class="expander"></td>
           </tr>
@@ -36,36 +42,44 @@
 
     </td>
   </tr>
-</table>',
-'html') ?>
-<br>
-<h6>Content Visibility</h6>
-<iframe id="if-visibilityClasses" src="docs/examples/visibility-classes.html"></iframe>
-<br>
-<hr />
-<h2 class="light">Breakdown</h2>
-<p>Available visibility classes:</p>
+</table>
+```
+
+###### Content Visibility
+
+<iframe id="if-visibilityClasses" src="examples/visibility-classes.html"></iframe>
+
+***
+
+## Breakdown
+
+Available visibility classes:
+
 <table>
   <tr>
-    <td><code>.hide-for-small</code></td>
+    <td>`.hide-for-small`</td>
   </tr>
   <tr>
-    <td><code>.show-for-small</code></td>
+    <td>`.show-for-small`</td>
   </tr>
 </table>
-<br>
-<hr />
-<h2 class="light">Compatibility</h2>
+
+***
+
+## Compatibility
+
 <div class="compatibility-section">
   <div class="row">
     <div class="large-9 columns">
-      <p>Visibility classes work as expected in most major email clients, but do not currently support <strong>Gmail</strong>.</p>
+
+Visibility classes work as expected in most major email clients, but do not currently support **Gmail**.
+
     </div>
     <div class="large-3 columns">
-      <a href="#" class="reveal-table">Toggle Full Table</a>
+      [Toggle Full Table](#)
     </div>
   </div>
-  
+
   <div class="row">
     <div class="small-12 columns">
       <table>

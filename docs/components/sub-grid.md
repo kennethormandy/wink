@@ -1,13 +1,20 @@
-<h1 id="sub-grid" data-magellan-destination="sub-grid" class="light">Sub-Grid</h1>
-<p class="lead">A non-stacking grid for even more versatile layouts.</p>
-<hr />
+# Sub-Grid
+<div id="sub-grid" data-magellan-destination="sub-grid"></div>
 
-<h4 class="normal">Grids Within Grids</h4>
-<p>While the Ink grid can't be nested like its <a href="http://foundation.zurb.com/docs/components/grid.html">Foundation counterpart</a>, Ink does provide a nestable sub-grid for when one grid just isn't enough. By applying a <code>.sub-columns</code> class (as well as a numbered class, same as the primary grid) to a <kbd>&lt;td&gt;</kbd> tag underneath a <code>.columns</code> table, you can sub-divide the <code>.columns</code> table into sub-columns.</p>
-<p>The last <code>.sub-columns</code> <kbd>&lt;td&gt;</kbd> in the <code>.columns</code> <kbd>&lt;table&gt;</kbd> should be given a class of <code>last</code> in order for the gutter padding to be properly maintained.</p>
-<h6>Basic Sub-Grid Example</h6>
-<?php code_example(
-'<table class="row">
+A non-stacking grid for even more versatile layouts.
+
+***
+
+#### Grids Within Grids
+
+While the Ink grid can’t be nested like its [Foundation counterpart](http://foundation.zurb.com/docs/components/grid.html), Ink does provide a nestable sub-grid for when one grid just isn't enough. By applying a `.sub-columns` class (as well as a numbered class, same as the primary grid) to a <kbd>&lt;td&gt;</kbd> tag underneath a `.columns` table, you can sub-divide the `.columns` table into sub-columns.
+
+The last `.sub-columns` <kbd>&lt;td&gt;</kbd> in the `.columns` <kbd>&lt;table&gt;</kbd> should be given a class of `last` in order for the gutter padding to be properly maintained.
+
+###### Basic Sub-Grid Example
+
+```html
+<table class="row">
   <tr>
     <td class="wrapper">
 
@@ -43,24 +50,29 @@
 
     </td>
   </tr>
-</table>',
-'html') ?>
-<br>
-<h6>Non-Collapsing Sub-Grid Columns</h6>
-<iframe id="if-subGrid" src="docs/examples/basic-sub-grid.html"></iframe>
-<br>
-<hr />
-<h2 class="light">Compatibility</h2>
+</table>
+```
+
+###### Non-Collapsing Sub-Grid Columns
+
+<iframe id="if-subGrid" src="examples/basic-sub-grid.html"></iframe>
+
+***
+
+## Compatibility
+
 <div class="compatibility-section">
   <div class="row">
     <div class="large-9 columns">
-      <p>The sub-grid works as expected in most major email clients.</p>
+
+The sub-grid works as expected in most major email clients.
+
     </div>
     <div class="large-3 columns">
-      <a href="#" class="reveal-table">Toggle Full Table</a>
+      [Toggle Full Table](#)
     </div>
   </div>
-  
+
   <div class="row">
     <div class="small-12 columns">
       <table>

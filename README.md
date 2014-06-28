@@ -1,25 +1,27 @@
-Ink
-===
+<!--
+[![Wink wordmark](http://placehold.it/728x300)](https://github.com/kennethormandy/wink)
 
-Ink is a responsive email framework, used to make HTML emails look great on any client or device.  It includes a 12-column grid, as well as some simple UI elements for rapid prototyping.
+***
+-->
 
-Homepage:      http://zurb.com/ink<br />
-Documentation: http://zurb.com/ink/docs.php<br />
-Download:      http://zurb.com/ink/download.php
+# Wink
 
-Ink is MIT-licensed and absolutely free to use. Ink wouldn't be possible without the support of the entire ZURB team, our friends and colleagues who gave feedback, and some luminaries who did some heavy lifting that we took advantage of (thanks guys).
+Responsive emails with personality, based on [Ink](https://github.com/zurb/ink).
 
-Repo Contents
-=============
+## Get started
 
-* Base Source for CSS
-* Docs
-* Responsive Email Templates
-* README, CONTRIBUTING and LICENSE
+```bash
+npm install -g harp
+harp server
+# Docs now available at http://localhost:9000/docs
+```
 
-ZURB
-====
+## Contributing
 
-Ink was made by [ZURB](http://www.zurb.com), a product design company in Campbell, CA.
+Thanks for considering contributing! There’s information about how to [get started with Wink here](CONTRIBUTING.md).
 
-If Ink knocks your socks off the way we hope it does and you want more, why not check out [our jobs](http://www.zurb.com/talent)?
+## License
+
+[The MIT License (MIT)](LICENSE.md)
+
+Copyright © 2014 [Kenneth Ormandy](http://kennethormandy.com) & [Chloi Inc.](http://chloi.io)

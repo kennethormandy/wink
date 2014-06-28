@@ -1,11 +1,66 @@
-# Ink
+# Wink
 
 ## Contributing
 
-1. Fork it.
-2. Create your feature branch (`git checkout -b my-new-feature`).
-3. Test your changes to the best of your ability.  We suggest utilizing the templates by running `grunt make:templates` and testing the compiled versions in the build folder.  It's expecially helpful if you can provide a Litmus test with your pull request.
 4. Update the documentation to reflect your changes if they add or changes current functionality. Run `grunt make:docs` to compile the documentation into the build folder and preview it.
-5. Commit your changes (`git commit -am 'Added some feature'`).
-6. Push to the branch (`git push origin my-new-feature`).
-7. Create a new pull request.
+
+# Contributing
+
+Thanks for considering contributing to Wink!
+
+If you’re new to all this GitHub, Open Source, JavaScript, Node.js, testing, wow all this stuff seems really difficult I just want to make my sites better stuff, I get it. I’m still there, too.
+
+Feel free to [send me an email](kenneth@chloi.io) or [open an issue here](http://github.com/kennethormandy/wink/issues) and I’ll do my best to share some resources that have helped me out. No promises—I’m still learning, too—but I can say it would be great to have you involved if you’re interested.
+
+## Opening issues
+
+If you find a bug, please feel free to [open an issue](https://github.com/kennethormandy/wink/issues).
+
+If you taking the time to mention a problem, even a seemingly minor one, it is greatly appreciated, and a totally valid contribution to this project. Thank you!
+
+## Fixing bugs
+
+We love pull requests. Here’s a quick guide:
+
+1. [Fork this repository](https://github.com/kennethormandy/wink/fork) and then clone it locally:
+
+  ```bash
+  git clone https://github.com/kennethormandy/wink
+  ```
+
+2. Create a topic branch for your changes:
+
+  ```bash
+  git checkout -b fix-for-that-thing
+  ```
+3. Commit a failing test for the bug:
+
+  ```bash
+  git commit -am "Adds a failing test to demonstrate that thing"
+  ```
+
+4. Add your changes:
+
+  ```bash
+  git commit -am "Adds a fix for that thing!"
+  ```
+
+5. Test your changes to the best of your ability.
+
+  It’s especially helpful if you can provide a Litmus test with your pull request.
+
+6. If everything looks good, push to your fork:
+
+  ```bash
+  git push origin fix-for-that-thing
+  ```
+
+7. [Submit a pull request.](https://help.github.com/articles/creating-a-pull-request)
+
+8. Enjoy being the wonderful person you are
+
+  After you’ve opened your pull request, [you should email me](mailto:kenneth@chloi.io) your mailing address so I can mail you a personal thank you note. Seriously!
+
+## Adding new features
+
+Thinking of adding a new feature? Cool! [Open an issue](https://github.com/kennethormandy/wink/issues) and let’s design it together.

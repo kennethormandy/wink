@@ -1,9 +1,16 @@
-<h1 id="compatibility" class="light">Supported Clients</h1>
-<p class="lead">We test and support all the major email clients &hellip; even Outlook.</p>
-<hr />
-<p>We support as many email clients and as much of the market as possible, however, we simply can't test for everything. As a result, we've decided to test the following clients, based on a combination of their <a href="http://emailclientmarketshare.com/">market share</a> and our ability to reliably test them with the devices and software we have access to.</p>
-<p>While we will help out as much as possible with issues regarding other clients (and are more than willing to accept <a href="https://github.com/zurb/ink/blob/master/CONTRIBUTING.md">pull requests</a> that add support for additional clients), we can't devote a lot of time or effort at this point to fixing issues related to email clients not in the following table.</p>
-<h2 class="light">Tested Clients</h2>
+# Supported Clients
+<div id="compatibility" data-magellan-destination="compatibility"></div>
+
+We test and support all the major email clients &hellip; even Outlook.
+
+***
+
+We support as many email clients and as much of the market as possible, however, we simply can't test for everything. As a result, we've decided to test the following clients, based on a combination of their [market share](http://emailclientmarketshare.com/) and our ability to reliably test them with the devices and software we have access to.
+
+While we will help out as much as possible with issues regarding other clients (and are more than willing to accept [pull requests](https://github.com/kennethormandy/wink/blob/master/CONTRIBUTING.md) that add support for additional clients), we can't devote a lot of time or effort at this point to fixing issues related to email clients not in the following table.
+
+## Tested Clients
+
 <table>
   <thead>
     <tr>

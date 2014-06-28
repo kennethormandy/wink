@@ -1,57 +1,67 @@
-<h1 id="changes" class="light">Changelog</h1>
-<p class="lead">All the latest and greatest changes to Ink.</p>
-<hr>
-<h2 class="light">1.0 - Public Release</h2>
-<h6 id="v1-0-5">1.0.5</h6>
-<ul>
-  <li>Add <code>.sub-grid</code> class to enable the use of sub-grids with panels</li>
-  <li>Add paragraph <code>.lede</code> class</li>
-  <li>Lower specificity on <code>.panel</code> class to allw its use on <kbd>&lt;div&gt;</kbd>s</li>
-  <li>Partially patch docs examples to work in Firefox</li>
-  <li>Normalize font rendering in <kbd>&lt;td&gt;</kbd>s for Outlook 2007/2010/2013</li>
-  <li>Fix 100% width issue on iPad</li>
-  <li>Remove offset-sub-columns</li>
-  <li>Remove proprietary <kbd>&lt;unsubscribe&gt;</kbd> tags from templates</li>
-  <li>Fix issue with <code>.one.sub-columns</code> sections</li>
-  <li>Expand the Getting Started section of the docs</li>
-  <li>Add full-width row example to the docs</li>
-  <li>Add offset-columns example to the docs</li>
-  <li>Add additional panel examples to the docs</li>
-  <li>Miscellaneous bug fixes and typo fixes</li>
-</ul>
-<h6 id="v1-0-4">1.0.4</h6>
-<ul>
-  <li>Apply font styles more uniformly to fix clients that strip out the <kbd>&lt;body&gt;</kbd> tag (fixes inliner preview)</li>
-  <li>Remove percentage based padding on sub-grid (fixes Outlook 2000/2002/2003)</li>
-  <li>Add Bower package metadata</li>
-  <li>Remove min-width for <kbd>&lt;center&gt;</kbd> tags nested under the sub-grid</li>
-  <li>Add helper aliases to <code>.text-pad</code> classes (ex. <code>.left-text-pad</code> can now be called using <code>.text-pad-left</code>)</li>
-  <li>Fix <code>.text-pad</code> classes nested under aliased <code>.column</code> tables</li>
-  <li>Remove deprecated button syntax</li>
-  <li>Fix link color in headings for Outlook 2007/2010/2013</li>
-</ul>
-<h6 id="v1-0-3">1.0.3</h6>
-<ul>
-  <li>Add text-pad classes</li>
-  <li>Lower heading sizes to more reasonable defaults</li>
-  <li>Add compatibility chart of supported/tested clients to the docs</li>
-</ul>
-<h6 id="v1-0-2">1.0.2</h6>
-<ul>
-  <li>Switch to new button syntax to fully support Microsoft Outlook</li>
-  <li>Add changelog to Docs</li>
-</ul>
-<h6 id="v1-0-1">1.0.1</h6>
-<ul>
-  <li>Fix crushed-image issue in Gmail (mobile, Android, iOS) by adding a min-width to <kbd>&lt;center&gt;</kbd> tags</li>
-</ul>
-<h6 id="v1-0-0">1.0.0</h6>
-<ul>
-  <li>Initial Launch</li>
-  <li>Grid</li>
-  <li>Sub-Grid</li>
-  <li>Block-Grid</li>
-  <li>Buttons</li>
-  <li>Panels</li>
-  <li>Retina Images</li>
-</ul>
+# Changelog
+<div id="changes" data-magellan-destination="changes"></div>
+
+All the latest and greatest changes to Ink.
+
+***
+
+## 1.0 – Public Release
+
+<div id="v1-0-5"></div>
+###### 1.0.5
+
+* Add `.sub-grid` class to enable the use of sub-grids with panels
+* Add paragraph `.lede` class
+* Lower specificity on `.panel` class to allw its use on <kbd>&lt;div&gt;</kbd>s
+* Partially patch docs examples to work in Firefox
+* Normalize font rendering in <kbd>&lt;td&gt;</kbd>s for Outlook 2007/2010/2013
+* Fix 100% width issue on iPad
+* Remove offset-sub-columns
+* Remove proprietary <kbd>&lt;unsubscribe&gt;</kbd> tags from templates
+* Fix issue with `.one.sub-columns` sections
+* Expand the Getting Started section of the docs
+* Add full-width row example to the docs
+* Add offset-columns example to the docs
+* Add additional panel examples to the docs
+* Miscellaneous bug fixes and typo fixes
+
+<div id="v1-0-4"></div>
+###### 1.0.4
+
+* Apply font styles more uniformly to fix clients that strip out the <kbd>&lt;body&gt;</kbd> tag (fixes inliner preview)
+* Remove percentage based padding on sub-grid (fixes Outlook 2000/2002/2003)
+* Add Bower package metadata
+* Remove min-width for <kbd>&lt;center&gt;</kbd> tags nested under the sub-grid
+* Add helper aliases to `.text-pad` classes (ex. `.left-text-pad` can now be called using `.text-pad-left`)
+* Fix `.text-pad` classes nested under aliased `.column` tables
+* Remove deprecated button syntax
+* Fix link color in headings for Outlook 2007/2010/2013
+
+<div id="v1-0-3"></div>
+###### 1.0.3
+
+* Add text-pad classes
+* Lower heading sizes to more reasonable defaults
+* Add compatibility chart of supported/tested clients to the docs
+
+<div id="v1-0-2"></div>
+###### 1.0.2
+
+* Switch to new button syntax to fully support Microsoft Outlook
+* Add changelog to Docs
+
+<div id="v1-0-1"></div>
+###### 1.0.1
+
+* Fix crushed-image issue in Gmail (mobile, Android, iOS) by adding a min-width to <kbd>&lt;center&gt;</kbd> tags
+
+<div id="v1-0-0"></div>
+###### 1.0.0
+
+* Initial Launch
+* Grid
+* Sub-Grid
+* Block-Grid
+* Buttons
+* Panels
+* Retina Images
