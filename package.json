@@ -16,7 +16,8 @@
     "typography"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified…yet! Pull requests on kennethormandy/wink are greatly appriciated.\" && exit 1"
+    "test": "echo \"Error: no test specified…yet! Pull requests on kennethormandy/wink are greatly appriciated.\" && exit 1",
+    "build": "node-sass src/wink.scss dist/wink.css"
   },
   "devDependencies": {
     "node-sass": "^0.9.3"
