@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright © 2014 Zurb Inc.
+Copyright © 2014 Zurb Inc.<br/>
 Copyright © 2014 Kenneth Ormandy & Chloi Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
