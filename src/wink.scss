@@ -25,6 +25,10 @@ $color-gray-dark: lighten($color-text, 20%) !default;
 
 /* Client-specific Styles & Reset */
 
+body.outlook p {
+  display: inline !important;
+}
+
 #outlook a {
   padding: 0;
 }
@@ -114,11 +118,17 @@ table {
     width: 580px;
     margin: 0 auto;
     text-align: inherit;
+    td.last {
+      padding-right: 0px;
+    }
   }
   &.row {
     padding: 0px;
     width: 100%;
     position: relative;
+    td.last {
+      padding-right: 0px;
+    }
   }
   &.container table.row {
     display: block;
@@ -133,7 +143,58 @@ table {
         padding-right: 10px;
       }
     }
+    .text-pad {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .left-text-pad,
+    .text-pad-left {
+      padding-left: 10px;
+    }
+    .right-text-pad,
+    .text-pad-right {
+      padding-right: 10px;
+    }
   }
+
+  &.one {    width: 30px;  }
+  &.two {    width: 80px;  }
+  &.three {  width: 130px; }
+  &.four {   width: 180px; }
+  &.five {   width: 230px; }
+  &.six {    width: 280px; }
+  &.seven {  width: 330px; }
+  &.eight {  width: 380px; }
+  &.nine {   width: 430px; }
+  &.ten {    width: 480px; }
+  &.eleven { width: 530px; }
+  &.twelve { width: 580px; }
+
+  &.one center {    min-width: 30px;  }
+  &.two center {    min-width: 80px;  }
+  &.three center {  min-width: 130px; }
+  &.four center {   min-width: 180px; }
+  &.five center {   min-width: 230px; }
+  &.six center {    min-width: 280px; }
+  &.seven center {  min-width: 330px; }
+  &.eight center {  min-width: 380px; }
+  &.nine center {   min-width: 430px; }
+  &.ten center {    min-width: 480px; }
+  &.eleven center { min-width: 530px; }
+  &.twelve center { min-width: 580px; }
+
+  &.one .panel center {    min-width: 10px;  }
+  &.two .panel center {    min-width: 60px;  }
+  &.three .panel center {  min-width: 110px; }
+  &.four .panel center {   min-width: 160px; }
+  &.five .panel center {   min-width: 210px; }
+  &.six .panel center {    min-width: 260px; }
+  &.seven .panel center {  min-width: 310px; }
+  &.eight .panel center {  min-width: 360px; }
+  &.nine .panel center {   min-width: 410px; }
+  &.ten .panel center {    min-width: 460px; }
+  &.eleven .panel center { min-width: 510px; }
+  &.twelve .panel center { min-width: 560px; }
 
 }
 
@@ -146,195 +207,17 @@ td {
     padding: 10px 20px 0px 0px;
     position: relative;
   }
-}
-
-table {
-  &.row td.last, &.container td.last {
-    padding-right: 0px;
-  }
-  &.one {
-    width: 30px;
-  }
-  &.two {
-    width: 80px;
-  }
-  &.three {
-    width: 130px;
-  }
-  &.four {
-    width: 180px;
-  }
-  &.five {
-    width: 230px;
-  }
-  &.six {
-    width: 280px;
-  }
-  &.seven {
-    width: 330px;
-  }
-  &.eight {
-    width: 380px;
-  }
-  &.nine {
-    width: 430px;
-  }
-  &.ten {
-    width: 480px;
-  }
-  &.eleven {
-    width: 530px;
-  }
-  &.twelve {
-    width: 580px;
-  }
-  &.one center {
-    min-width: 30px;
-  }
-  &.two center {
-    min-width: 80px;
-  }
-  &.three center {
-    min-width: 130px;
-  }
-  &.four center {
-    min-width: 180px;
-  }
-  &.five center {
-    min-width: 230px;
-  }
-  &.six center {
-    min-width: 280px;
-  }
-  &.seven center {
-    min-width: 330px;
-  }
-  &.eight center {
-    min-width: 380px;
-  }
-  &.nine center {
-    min-width: 430px;
-  }
-  &.ten center {
-    min-width: 480px;
-  }
-  &.eleven center {
-    min-width: 530px;
-  }
-  &.twelve center {
-    min-width: 580px;
-  }
-  &.one .panel center {
-    min-width: 10px;
-  }
-  &.two .panel center {
-    min-width: 60px;
-  }
-  &.three .panel center {
-    min-width: 110px;
-  }
-  &.four .panel center {
-    min-width: 160px;
-  }
-  &.five .panel center {
-    min-width: 210px;
-  }
-  &.six .panel center {
-    min-width: 260px;
-  }
-  &.seven .panel center {
-    min-width: 310px;
-  }
-  &.eight .panel center {
-    min-width: 360px;
-  }
-  &.nine .panel center {
-    min-width: 410px;
-  }
-  &.ten .panel center {
-    min-width: 460px;
-  }
-  &.eleven .panel center {
-    min-width: 510px;
-  }
-  &.twelve .panel center {
-    min-width: 560px;
-  }
-}
-
-.body {
-  .columns td.one, .column td.one {
-    width: 8.333333%;
-  }
-  .columns td.two, .column td.two {
-    width: 16.666666%;
-  }
-  .columns td.three, .column td.three {
-    width: 25%;
-  }
-  .columns td.four, .column td.four {
-    width: 33.333333%;
-  }
-  .columns td.five, .column td.five {
-    width: 41.666666%;
-  }
-  .columns td.six, .column td.six {
-    width: 50%;
-  }
-  .columns td.seven, .column td.seven {
-    width: 58.333333%;
-  }
-  .columns td.eight, .column td.eight {
-    width: 66.666666%;
-  }
-  .columns td.nine, .column td.nine {
-    width: 75%;
-  }
-  .columns td.ten, .column td.ten {
-    width: 83.333333%;
-  }
-  .columns td.eleven, .column td.eleven {
-    width: 91.666666%;
-  }
-  .columns td.twelve, .column td.twelve {
-    width: 100%;
-  }
-}
-
-td {
-  &.offset-by-one {
-    padding-left: 50px;
-  }
-  &.offset-by-two {
-    padding-left: 100px;
-  }
-  &.offset-by-three {
-    padding-left: 150px;
-  }
-  &.offset-by-four {
-    padding-left: 200px;
-  }
-  &.offset-by-five {
-    padding-left: 250px;
-  }
-  &.offset-by-six {
-    padding-left: 300px;
-  }
-  &.offset-by-seven {
-    padding-left: 350px;
-  }
-  &.offset-by-eight {
-    padding-left: 400px;
-  }
-  &.offset-by-nine {
-    padding-left: 450px;
-  }
-  &.offset-by-ten {
-    padding-left: 500px;
-  }
-  &.offset-by-eleven {
-    padding-left: 550px;
-  }
+  &.offset-by-one { padding-left: 50px; }
+  &.offset-by-two { padding-left: 100px; }
+  &.offset-by-three { padding-left: 150px; }
+  &.offset-by-four { padding-left: 200px; }
+  &.offset-by-five { padding-left: 250px; }
+  &.offset-by-six { padding-left: 300px; }
+  &.offset-by-seven { padding-left: 350px; }
+  &.offset-by-eight { padding-left: 400px; }
+  &.offset-by-nine { padding-left: 450px; }
+  &.offset-by-ten { padding-left: 500px; }
+  &.offset-by-eleven { padding-left: 550px; }
   &.expander {
     visibility: hidden;
     width: 0px;
@@ -342,29 +225,22 @@ td {
   }
 }
 
-table {
-  &.columns .text-pad, &.column .text-pad {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  &.columns {
-    .left-text-pad, .text-pad-left {
-      padding-left: 10px;
-    }
-  }
-  &.column {
-    .left-text-pad, .text-pad-left {
-      padding-left: 10px;
-    }
-  }
-  &.columns {
-    .right-text-pad, .text-pad-right {
-      padding-right: 10px;
-    }
-  }
-  &.column {
-    .right-text-pad, .text-pad-right {
-      padding-right: 10px;
+.body {
+  .columns,
+  .column {
+    td {
+      &.one { width:    #{ 1/12 * 100% } !important; }
+      &.two { width:    #{ 2/12 * 100% } !important; }
+      &.three { width:  #{ 3/12 * 100% } !important; }
+      &.four { width:   #{ 4/12 * 100% } !important; }
+      &.five { width:   #{ 5/12 * 100% } !important; }
+      &.six { width:    #{ 6/12 * 100% } !important; }
+      &.seven { width:  #{ 7/12 * 100% } !important; }
+      &.eight { width:  #{ 8/12 * 100% } !important; }
+      &.nine { width:   #{ 9/12 * 100% } !important; }
+      &.ten { width:    #{ 10/12 * 100% } !important; }
+      &.eleven { width: #{ 11/12 * 100% } !important; }
+      &.twelve { width: #{ 12/12 * 100% } !important; }
     }
   }
 }
@@ -380,54 +256,13 @@ table {
   }
 }
 
-.two-up td {
-  width: 270px;
-}
-
-.three-up td {
-  width: 173px;
-}
-
-.four-up td {
-  width: 125px;
-}
-
-.five-up td {
-  width: 96px;
-}
-
-.six-up td {
-  width: 76px;
-}
-
-.seven-up td {
-  width: 62px;
-}
-
-.eight-up td {
-  width: 52px;
-}
-
-/* Alignment & Visibility Classes */
-
-table.center, td.center, h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center {
-  text-align: center;
-}
-
-span.center {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-img.center {
-  margin: 0 auto;
-  float: none;
-}
-
-.show-for-small, .hide-for-desktop {
-  display: none;
-}
+.two-up td {   width: 270px; }
+.three-up td { width: 173px; }
+.four-up td {  width: 125px; }
+.five-up td {  width: 96px; }
+.six-up td {   width: 76px; }
+.seven-up td { width: 62px; }
+.eight-up td { width: 52px; }
 
 /* Typography */
 
@@ -481,29 +316,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1 {
-  font-size: $base-font-size * 2.222222;
-}
-
-h2 {
-  font-size: $base-font-size * 2;
-}
-
-h3 {
-  font-size: $base-font-size * 1.777777;
-}
-
-h4 {
-  font-size: $base-font-size * 1.555555;
-}
-
-h5 {
-  font-size: $base-font-size * 1.333333;
-}
-
-h6 {
-  font-size: $base-font-size;
-}
+h1 { font-size: $base-font-size * 2.222222; }
+h2 { font-size: $base-font-size * 2.000000; }
+h3 { font-size: $base-font-size * 1.777777; }
+h4 { font-size: $base-font-size * 1.555555; }
+h5 { font-size: $base-font-size * 1.333333; }
+h6 { font-size: $base-font-size * 1.000000; }
 
 p {
   margin-bottom: $base-font-size !important;
@@ -539,6 +357,8 @@ a.panel {
   }
 }
 
+/* Sub-grid */
+
 .sub-grid {
   table {
     width: 100%;
@@ -551,89 +371,79 @@ a.panel {
 /* Buttons */
 
 table {
-  &.button, &.tiny-button, &.small-button, &.medium-button, &.large-button {
+  &.button,
+  &.tiny-button,
+  &.small-button,
+  &.medium-button,
+  &.large-button {
     width: 100%;
     overflow: hidden;
-  }
-  &.button td, &.tiny-button td, &.small-button td, &.medium-button td, &.large-button td {
-    display: block;
-    width: auto !important;
-    text-align: center;
-    background: $color-primary;
-    border: 1px solid $color-primary;
-    color: #FFF;
-    padding: 8px 0;
+    td {
+      display: block;
+      width: auto !important;
+      text-align: center;
+      background: $color-primary;
+      border: 1px solid $color-primary;
+      color: #FFF;
+      padding: 8px 0;
+      a {
+        font-weight: 400;
+        text-decoration: none;
+        font-family: $font-family-sans;
+        color: #FFF;
+        font-size: $base-font-size;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+    }
   }
   &.tiny-button td {
     padding: 5px 0 4px;
+    a { font-size: $base-font-size * 0.666666; }
   }
   &.small-button td {
     padding: 8px 0 7px;
+    a { font-size: $base-font-size * 0.888888; }
   }
   &.medium-button td {
     padding: 12px 0 10px;
+    a { font-size: $base-font-size * 1; }
   }
   &.large-button td {
     padding: 21px 0 18px;
-  }
-  &.button td a, &.tiny-button td a, &.small-button td a, &.medium-button td a, &.large-button td a {
-    font-weight: 400;
-    text-decoration: none;
-    font-family: $font-family-sans;
-    color: #FFF;
-    font-size: $base-font-size;
-    display: block;
-    height: 100%;
-    width: 100%;
-  }
-  &.tiny-button td a {
-    font-size: $base-font-size * 0.666666;
-  }
-  &.small-button td a {
-    font-size: $base-font-size * 0.888888;
-  }
-  &.medium-button td a {
-    font-size: $base-font-size * 1;
-  }
-  &.large-button td a {
-    font-size: $base-font-size * 1.2;
+    a { font-size: $base-font-size * 1.2; }
   }
   &.button {
-    &:hover td, &:visited td, &:active td {
+    &:hover td,
+    &:visited td,
+    &:active td {
       background: darken($color-primary, 10%) !important;
-      border: 5px solid darken($color-primary, 10%) !important;
+      border: 1px solid darken($color-primary, 10%) !important;
     }
-    &:hover td a, &:visited td a, &:active td a {
+    &:hover td a,
+    &:visited td a,
+    &:active td a {
+      color: #FFF !important;
+    }
+    &:hover td a,
+    &:active td a,
+    td a:visited {
       color: #FFF !important;
     }
   }
-  &.tiny-button:hover td, &.small-button:hover td, &.medium-button:hover td, &.large-button:hover td {
-    background: darken($color-primary, 10%) !important;
-    border: 1px solid darken($color-primary, 10%) !important;
-  }
-  &.button {
-    &:hover td a, &:active td a, td a:visited {
-      color: #FFF !important;
-    }
-  }
-  &.tiny-button {
-    &:hover td a, &:active td a, td a:visited {
-      color: #FFF !important;
-    }
-  }
-  &.small-button {
-    &:hover td a, &:active td a, td a:visited {
-      color: #FFF !important;
-    }
-  }
-  &.medium-button {
-    &:hover td a, &:active td a, td a:visited {
-      color: #FFF !important;
-    }
-  }
+  &.tiny-button,
+  &.small-button,
+  &.medium-button,
   &.large-button {
-    &:hover td a, &:active td a, td a:visited {
+    &:hover td a,
+    &:active td a,
+    td a:visited {
       color: #FFF !important;
+    }
+    &:hover td {
+      background: darken($color-primary, 10%) !important;
+      border: 1px solid darken($color-primary, 10%) !important;
     }
   }
   &.secondary {
@@ -688,6 +498,29 @@ table {
 
 /* Helpers */
 
+table, td, h1, h2, h3, h4, h5, h6, p
+  .center {
+    text-align: center;
+  }
+}
+
+span.center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+img.center {
+  margin: 0 auto;
+  float: none;
+}
+
+.show-for-small,
+.hide-for-desktop {
+  display: none;
+  visibility: hidden;
+}
+
 .afterwards {
   p, div, span, a {
     font-size: $base-font-size * 0.8 !important;
@@ -705,12 +538,6 @@ table {
     color: desaturate($color-primary, 20%) !important;
     text-decoration: none !important;
   }
-}
-
-/* Outlook First */
-
-body.outlook p {
-  display: inline !important;
 }
 
 /*  Media Queries */
