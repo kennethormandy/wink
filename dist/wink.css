@@ -1,7 +1,7 @@
 @import url("http://f.fontdeck.com/s/css/l4MsFun30OJhB9DTDGcb8JQSAOQ/DOMAIN_NAME/46799.css");
 @import url("http://fast.fonts.net/cssapi/199beebf-6f1b-4357-978e-839c8662fabf.css");
 /*!
- * Wink v0.1.0
+ * Wink v0.2.0
  * wink.kennethormandy.com
  * MIT License
  * Copyright © 2014 Kenneth Ormandy & Chloi Inc.
@@ -432,15 +432,31 @@ table.round td {
 /* Helpers */
 table .center, td .center, h1 .center, h2 .center, h3 .center, h4 .center, h5 .center, h6 .center, p .center {
   text-align: center; }
+table .right, td .right, h1 .right, h2 .right, h3 .right, h4 .right, h5 .right, h6 .right, p .right {
+  text-align: right; }
+table .left, td .left, h1 .left, h2 .left, h3 .left, h4 .left, h5 .left, h6 .left, p .left {
+  text-align: left; }
 
-span.center {
+span.center, span.left, span.right {
   display: block;
   width: 100%;
   text-align: center; }
 
+span.right {
+  text-align: right; }
+
+span.left {
+  text-align: left; }
+
 img.center {
   margin: 0 auto;
   float: none; }
+
+img.right {
+  float: right; }
+
+img.left {
+  float: left; }
 
 .show-for-small, .hide-for-desktop {
   display: none;
@@ -455,6 +471,18 @@ img.center {
 .fixBlueLinks a {
   color: #4b8384 !important;
   text-decoration: none !important; }
+
+/* Knockout */
+.knockout {
+  background: #369699 !important; }
+  .knockout td, .knockout tr, .knockout table, .knockout div, .knockout span, .knockout p, .knockout h1, .knockout h2, .knockout h3, .knockout h4, .knockout h5, .knockout h6 {
+    color: #FFF; }
+    .knockout td a, .knockout tr a, .knockout table a, .knockout div a, .knockout span a, .knockout p a, .knockout h1 a, .knockout h2 a, .knockout h3 a, .knockout h4 a, .knockout h5 a, .knockout h6 a {
+      text-decoration: underline; }
+      .knockout td a.panel, .knockout tr a.panel, .knockout table a.panel, .knockout div a.panel, .knockout span a.panel, .knockout p a.panel, .knockout h1 a.panel, .knockout h2 a.panel, .knockout h3 a.panel, .knockout h4 a.panel, .knockout h5 a.panel, .knockout h6 a.panel {
+        text-decoration: none; }
+        .knockout td a.panel .a-faux, .knockout tr a.panel .a-faux, .knockout table a.panel .a-faux, .knockout div a.panel .a-faux, .knockout span a.panel .a-faux, .knockout p a.panel .a-faux, .knockout h1 a.panel .a-faux, .knockout h2 a.panel .a-faux, .knockout h3 a.panel .a-faux, .knockout h4 a.panel .a-faux, .knockout h5 a.panel .a-faux, .knockout h6 a.panel .a-faux {
+          color: #369699; }
 
 /*  Media Queries */
 @media only screen and (max-width: 600px) {

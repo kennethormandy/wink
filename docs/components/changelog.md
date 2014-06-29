@@ -5,10 +5,33 @@ All the latest and greatest changes to Ink.
 
 ***
 
-## 1.0 – Public Release
+## Wink v0.x.x – Initial Fork
+
+<div id="v0-2-0"></div>
+###### v0.2.0
+
+* Adds `.knockout` helper and docs
+* Adds `.left` helper
+* Adds `.right` helper
+* Adds receipt template
+* Adds breakout template
+
+<div id="v0-1-0"></div>
+###### v0.1.0
+
+* Moves documentation to Markdown
+* Moves examples and test to EJS with [Harp](http://harpjs.com), dropping PHP dependency
+* Cleans up CSS as SCSS
+* Improves typographic scale (more to come)
+* Adds fonts, and improves font stacks
+* Reduces colors and makes them variables
+* Removes button borders on hover
+* Improves `.panel` so it’s more like a block-level `<a>`
+
+## Ink v1.0.x – Public Release
 
 <div id="v1-0-5"></div>
-###### 1.0.5
+###### v1.0.5
 
 * Add `.sub-grid` class to enable the use of sub-grids with panels
 * Add paragraph `.lede` class
@@ -26,7 +49,7 @@ All the latest and greatest changes to Ink.
 * Miscellaneous bug fixes and typo fixes
 
 <div id="v1-0-4"></div>
-###### 1.0.4
+###### v1.0.4
 
 * Apply font styles more uniformly to fix clients that strip out the <kbd>&lt;body&gt;</kbd> tag (fixes inliner preview)
 * Remove percentage based padding on sub-grid (fixes Outlook 2000/2002/2003)
@@ -38,25 +61,25 @@ All the latest and greatest changes to Ink.
 * Fix link color in headings for Outlook 2007/2010/2013
 
 <div id="v1-0-3"></div>
-###### 1.0.3
+###### v1.0.3
 
 * Add text-pad classes
 * Lower heading sizes to more reasonable defaults
 * Add compatibility chart of supported/tested clients to the docs
 
 <div id="v1-0-2"></div>
-###### 1.0.2
+###### v1.0.2
 
 * Switch to new button syntax to fully support Microsoft Outlook
 * Add changelog to Docs
 
 <div id="v1-0-1"></div>
-###### 1.0.1
+###### v1.0.1
 
 * Fix crushed-image issue in Gmail (mobile, Android, iOS) by adding a min-width to <kbd>&lt;center&gt;</kbd> tags
 
 <div id="v1-0-0"></div>
-###### 1.0.0
+###### v1.0.0
 
 * Initial Launch
 * Grid
