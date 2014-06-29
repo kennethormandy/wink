@@ -502,17 +502,41 @@ table, td, h1, h2, h3, h4, h5, h6, p {
   .center {
     text-align: center;
   }
+  .right {
+    text-align: right;
+  }
+  .left {
+    text-align: left;
+  }
 }
 
-span.center {
+span.center,
+span.left,
+span.right {
   display: block;
   width: 100%;
   text-align: center;
 }
 
+span.right {
+  text-align: right;
+}
+
+span.left {
+  text-align: left;
+}
+
 img.center {
   margin: 0 auto;
   float: none;
+}
+
+img.right {
+  float: right;
+}
+
+img.left {
+  float: left;
 }
 
 .show-for-small,
@@ -537,6 +561,33 @@ img.center {
   a {
     color: desaturate($color-primary, 20%) !important;
     text-decoration: none !important;
+  }
+}
+
+/* Knockout */
+
+.knockout {
+  background: $color-primary;
+  margin-bottom: $base-font-size;
+  table {
+    margin-bottom: $base-font-size;
+  }
+  td, tr, table, div, span, p,
+  h1, h2, h3, h4, h5, h6 {
+    @if lightness($color-primary) < 50% {
+      color: #FFF;
+    } @else {
+      color: $color-text;
+    }
+    a {
+      text-decoration: underline;
+      &.panel {
+        text-decoration: none;
+        .a-faux {
+          color: $color-primary;
+        }
+      }
+    }
   }
 }
 
