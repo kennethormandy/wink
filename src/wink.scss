@@ -567,11 +567,11 @@ img.left {
 /* Knockout */
 
 .knockout {
-  background: $color-primary;
-  margin-bottom: $base-font-size;
-  table {
-    margin-bottom: $base-font-size;
-  }
+  background: $color-primary !important;
+  // margin-bottom: $base-font-size;
+  // table {
+  //   margin-bottom: $base-font-size;
+  // }
   td, tr, table, div, span, p,
   h1, h2, h3, h4, h5, h6 {
     @if lightness($color-primary) < 50% {
