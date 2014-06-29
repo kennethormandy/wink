@@ -410,6 +410,18 @@ In the example below, the rows have a white background, while the body is light 
 
 <iframe id="if-fullWidth" src="examples/full-width.html"></iframe>
 
+###### Knockout Full Width Rows
+
+Sometimes, you’ll want to make these full width rows more interesting by swapping the background color out. The `.knockout` helper will assist with this by automatically swapping out the background color for the primary color, and making the text dark or light as appropriate.
+
+```html
+<table class="row knockout"> <!-- Add the knockout class to the previous Full Width row example -->
+  …
+</table>
+```
+
+<iframe id="if-fullWidth" src="examples/full-width-knockout.html"></iframe>
+
 #### Expanders
 
 When the Ink grid is shown on a small screen, the `.columns` tables expand to the full width of the container and stack vertically. On some clients, however, the columns don't expand properly if the content isn't as wide as the screen. While this might not seem so bad, it can cause your layout to appear broken if you are using a background color on the `.columns` table or are centering the content.
