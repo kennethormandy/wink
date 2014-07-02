@@ -3,12 +3,18 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width"/>
-  <link href="../../src/wink.css" rel="stylesheet" />
+  <% if(environment === "development") { %>
+    <link rel="stylesheet" href="../src/wink.css" /> <!-- For development only -->
+  <% } else { %>
+    <style>
+    <%- include ../dist/wink.css %>
+    </style>
+  <% } %>
   <style>
   @import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,700);
   body, table.body, p, td,
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Fira Sans";
+    font-family: "Fira Sans", fantasy;
   }
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;

@@ -3,9 +3,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width"/>
-	<style>
-	<%- include ../../dist/wink.css %>
-  </style>
+	<% if(environment === "development") { %>
+		<link rel="stylesheet" href="../src/wink.css" /> <!-- For development only -->
+	<% } else { %>
+		<style>
+		<%- include ../dist/wink.css %>
+		</style>
+	<% } %>
   <style>
 
     table.facebook td {
@@ -105,7 +109,7 @@
                               <img src="http://placehold.it/200x50">
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <span class="template-label">SIDEBAR</span>
+                              <span class="template-label">SIDEBAR HERO</span>
                             </td>
                             <td class="expander"></td>
                           </tr>
@@ -120,87 +124,79 @@
             </tr>
           </table>
 
-				 <br>
+          <br>
 
           <table class="container">
             <tr>
               <td>
 
               <!-- content start -->
+              <table class="row">
+                <tr>
+                  <td class="wrapper last">
 
-                <table class="row">
-                  <tr>
-                    <td class="wrapper">
+                    <table class="twelve columns">
+                      <tr>
+                        <td>
+                          <h1>Welcome, Daneel Olivan</h1>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                          <img width="580" height="300" src="http://placehold.it/580x300">
+                        </td>
+                        <td class="expander"></td>
+                      </tr>
+                    </table>
 
-                      <table class="six columns">
-                        <tr>
-                          <td>
-                            <h2>Hello,<br> Han Fastolfe</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
+                    <table class="twelve columns">
+                      <tr>
+                        <td>
+													<a href="#" class="panel">
+														Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <span class="a-faux">Click it! →</span>
+													</a>
+                        </td>
+                        <td class="expander"></td>
+                      </tr>
+                    </table>
 
-                      <table class="six columns">
-                        <tr>
-                          <td>
-														<a href="#" class="panel">
-															Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <span class="a-faux">Click it! →</span>
-														</a>
-                          </td>
+                  </td>
+                </tr>
+              </table>
 
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
+              <br>  <!-- Break Tag for row -->
 
-                      <table class="six columns">
-                        <tr>
-                          <td>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+              <table class="row">
+                <tr>
+                  <td class="wrapper">
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
+                    <table class="six columns">
+                      <tr>
+                        <td>
 
-                            <table class="button">
-                              <tr>
-                                <td>
-                                  <a href="#">Click Me!</a>
-                                </td>
-                              </tr>
-                            </table>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
 
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
 
-                    </td>
-                    <td class="wrapper last">
+                          <table class="button">
+                            <tr>
+                              <td>
+                                <a href="#">Click Me!</a>
+                              </td>
+                            </tr>
+                          </table>
 
-                      <table class="six columns">
-                        <tr>
-                          <td class="panel">
-                            <h6>Header Thing</h6>
-                            <p>Sub-head or something</p>
-                            <table>
-                              <tr>
-                                <td>
-                                  <a href="#">Just a Plain Link &raquo;</a>
-                                </td>
-                              </tr>
-                            </table>
-                            <hr>
-                            <table>
-                              <tr>
-                                <td>
-                                  <a href="#">Just a Plain Link &raquo;</a>
-                                </td>
-                              </tr>
-                            </table>
-                            <hr>
-                            <table>
+                        </td>
+                        <td class="expander"></td>
+                      </tr>
+                    </table>
+
+                  </td>
+                  <td class="wrapper last">
+
+                    <table class="six columns">
+                      <tr>
+                        <td class="panel">
+                          <h6>Header Thing</h6>
+                          <p>Sub-head or something</p>
+                          <table>
                               <tr>
                                 <td>
                                   <a href="#">Just a Plain Link &raquo;</a>
@@ -239,18 +235,32 @@
                                 </td>
                               </tr>
                             </table>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                      <br>
-
-                      <table class="six columns">
-                        <tr>
-                          <td class="panel">
-                            <h6 style="margin-bottom:5px;">Connect With Us:</h6>
-                            <table class="tiny-button facebook">
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                        </td>
+                        <td class="expander"></td>
+                      </tr>
+                    </table>
+                    <br>
+                    <table class="six columns">
+                      <tr>
+                        <td class="panel">
+                          <h6 style="margin-bottom:5px;">Connect With Us:</h6>
+                          <table class="tiny-button facebook">
                               <tr>
                                 <td>
                                   <a href="#">Facebook</a>
@@ -277,39 +287,39 @@
                                 </td>
                               </tr>
                             </table>
-                            <br>
-                            <h6 style="margin-bottom:5px;">Contact Info:</h6>
-                            <p>Phone: <b>408.341.0600</b></p>
-                            <p>Email: <a href="mailto:hseldon@trantor.com">hseldon@trantor.com</a></p>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
+                          <br>
+                          <h6 style="margin-bottom:5px;">Contact Info:</h6>
+                          <p>Phone: <b>408.341.0600</b></p>
+                          <p>Email: <a href="mailto:hseldon@trantor.com">hseldon@trantor.com</a></p>
+                        </td>
+                        <td class="expander"></td>
+                      </tr>
+                    </table>
 
-                    </td>
-                  </tr>
-                </table>
-                <br>
-                <br>
-                <!-- Legal + Unsubscribe -->
-                <table class="row">
-                  <tr>
-                    <td class="wrapper last">
+                  </td>
+                </tr>
+              </table>
+              <br>
+              <br>
+              <!-- Legal + Unsubscribe -->
+              <table class="row">
+                <tr>
+                  <td class="wrapper last">
 
-                      <table class="twelve columns">
-                        <tr>
-                          <td align="center">
-                            <center>
-                              <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a></p>
-                            </center>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
+                    <table class="twelve columns">
+                      <tr>
+                        <td align="center">
+                          <center>
+                            <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a></p>
+                          </center>
+                        </td>
+                        <td class="expander"></td>
+                      </tr>
+                    </table>
 
-                    </td>
-                  </tr>
-                </table>
+                  </td>
+                </tr>
+              </table>
 
               <!-- container end below -->
               </td>

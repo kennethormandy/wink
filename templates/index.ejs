@@ -1,0 +1,9 @@
+<h1>Templates</h1>
+<ul>
+  <% for (templates in public.templates._contents) { %>
+  <% var tmplt = public.templates._contents[templates] %>
+    <% if(tmplt !== "index.html") { %>
+      <li><a href="<%= tmplt.split(".html")[0] %>"><%= tmplt %></a></li>
+    <% } %>
+  <% } %>
+</ul>

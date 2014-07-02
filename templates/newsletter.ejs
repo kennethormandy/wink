@@ -3,9 +3,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width"/>
-	<style>
-	<%- include ../../dist/wink.css %>
-  </style>
+	<% if(environment === "development") { %>
+		<link rel="stylesheet" href="../src/wink.css" /> <!-- For development only -->
+	<% } else { %>
+		<style>
+		<%- include ../dist/wink.css %>
+		</style>
+	<% } %>
   <style>
 
     .facebook table td {
