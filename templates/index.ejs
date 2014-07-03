@@ -1,9 +1,12 @@
 <h1>Templates</h1>
+<p>Works-in-progress.</p>
 <ul>
-  <% for (templates in public.templates._contents) { %>
-  <% var tmplt = public.templates._contents[templates] %>
-    <% if(tmplt !== "index.html") { %>
-      <li><a href="<%= tmplt.split(".html")[0] %>"><%= tmplt %></a></li>
-    <% } %>
-  <% } %>
+  <li><a href="basic">basic</a></li>
+  <li><a href="breakout">breakout</a></li>
+  <li><a href="hero">hero</a></li>
+  <li><a href="newsletter">newsletter</a></li>
+  <li><a href="receipt">receipt</a></li>
+  <li><a href="sidebar-hero">sidebar-hero</a></li>
+  <li><a href="sidebar">sidebar</a></li>
+  <li><a href="boilerplate">boilerplate</a></li>
 </ul>
